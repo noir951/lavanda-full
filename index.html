@@ -17,9 +17,7 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
-
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <!-- Если не главная - убираем класс -->
@@ -49,8 +47,13 @@
 				<a href="#mmenu" class="burger-mob-fix mobile_menu"><i class="icon burger-mob"></i></a>
 				<a href="#sign-in" class="account-mob-fix magnific"><i class="icon acount-mob"></i></a>
 
-				<form action="" class="search-header">
-					<input type="text" placeholder="Поиск" name="search">
+				<form action="" class="search-header" autocomplete="off">
+					<input type="text" placeholder="Поиск" name="search" autocomplete="off">
+					<div class="search-list">
+					    <span class="search-list-item">цветы</span>
+					    <span class="search-list-item">букеты</span>
+					    <span class="search-list-item">дизайнерские</span>
+					</div>
 					<button><i class="icon search"></i></button>
 				</form>
 			</div>
@@ -74,12 +77,17 @@
 							</nav>
 						</div>					
 						<!-- Усли не главная страница убираем No-paddig -->
-						<div class="hidden-lg col-md-4">						
-							<form action="" class="search-header">
-								<input type="text" placeholder="Поиск" name="search">
-								<button><i class="icon search"></i></button>
-							</form>
-						</div>
+<div class="hidden-lg col-md-4">
+    <form action="" class="search-header" autocomplete="off">
+        <input type="text" placeholder="Поиск" name="search" autocomplete="off">
+        <div class="search-list">
+            <span class="search-list-item">цветы</span>
+            <span class="search-list-item">букеты</span>
+            <span class="search-list-item">дизайнерские</span>
+        </div>
+        <button><i class="icon search"></i></button>
+    </form>
+</div>
 
 					</div>
 				</div>
@@ -157,10 +165,15 @@
 						</div>
 
 						<div class="col-12 mobile_search">
-							<form action="" class="search-header">
-								<input type="text" placeholder="Поиск" name="search">
-								<button><i class="icon search"></i></button>
-							</form>
+<form action="" class="search-header" autocomplete="off">
+    <input type="text" placeholder="Поиск" name="search" autocomplete="off">
+    <div class="search-list">
+        <span class="search-list-item">цветы</span>
+        <span class="search-list-item">букеты</span>
+        <span class="search-list-item">дизайнерские</span>
+    </div>
+    <button><i class="icon search"></i></button>
+</form>
 						</div>
 
 
@@ -213,8 +226,15 @@
 						</div>					
 						<!-- Усли не главная страница убираем No-paddig -->
 						<div class="hidden-lg col-md-4">						
-							<form action="" class="search-header">
-								<input type="text" placeholder="Поиск" name="search">
+							<form action="" class="search-header" autocomplete="off">
+								<div class="ui-widget">
+								    <input type="text" placeholder="Поиск" name="search" autocomplete="off">
+					<div class="search-list">
+					    <span class="search-list-item">цветы</span>
+					    <span class="search-list-item">букеты</span>
+					    <span class="search-list-item">дизайнерские</span>
+					</div>
+								</div>
 								<button><i class="icon search"></i></button>
 							</form>
 						</div>
@@ -236,8 +256,36 @@
 							<div class="module-filter">
 								<div class="title">Сортировать:</div>
 								<div class="filter-items">
-									<a href="#">цена &#8593;</a>
-									<a href="#">цена &#8595;</a>
+									<a href="#" class="sort-up">цена
+<svg width="5" height="12" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.1183mm" height="3.9214mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 4.38 8.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#888888;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="1.83,1.91 1.83,8.1 2.55,8.1 2.55,1.91 3.76,3.77 4.38,3.37 2.19,0 -0,3.37 0.62,3.77 "/>
+ </g>
+</svg>
+									</a>
+									<a href="#" class="sort-down">цена
+<svg class="sort-down" width="5" height="12" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.1183mm" height="3.9214mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 5.11 9.47" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#888888;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="2.13,7.24 2.13,0 2.98,0 2.98,7.24 4.39,5.06 5.11,5.52 2.56,9.47 -0,5.52 0.72,5.06 "/>
+ </g>
+</svg>
+									</a>
 									<a href="#" class="active" >по новизне</a>
 									<a href="#">по популярности</a>
 								</div>
@@ -313,7 +361,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -348,7 +396,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -381,7 +429,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -414,7 +462,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -447,7 +495,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -480,7 +528,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -513,7 +561,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -547,8 +595,8 @@
 						<div class="module-filter">
 							<div class="title">Сортировать:</div>
 							<div class="filter-items">
-								<a href="#">цена &#8593;</a>
-								<a href="#">цена &#8595;</a>
+								<a href="#">цена <i class="icon up"></i></a>
+								<a href="#">цена <i class="icon down"></i></a>
 								<a href="#" class="active" >по новизне</a>
 								<a href="#">по популярности</a>
 							</div>
@@ -581,7 +629,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -614,7 +662,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -647,7 +695,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -680,7 +728,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -713,7 +761,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -746,7 +794,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -779,7 +827,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -812,7 +860,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -850,7 +898,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-sm-12 col-md-10 offset-md-1">
+					<div class="col-12 col-sm-12 col-md-12">
 						
 						<div class="container no-padding">
 							<div class="row">
@@ -899,7 +947,7 @@
 										<div class="photo">
 											<div class="site">
 												<div class="title">Фото на сайте</div>
-												<img src="img/preview.png" alt="">
+												<img src="img/otz.svg" alt="">
 											</div>
 											<div class="deliver">
 												<div class="title">При доставке</div>
@@ -961,7 +1009,7 @@
 											</div>
 											<div class="deliver">
 												<div class="title">При доставке</div>
-												<img src="img/preview.png" alt="">
+												<img src="img/otz.svg" alt="">
 											</div>
 										</div>
 
@@ -1046,7 +1094,7 @@
 
 		<section class="last-sale">
 			<div class="container">
-				<div class="row">
+				<div class="row row-mobile">
 					<div class="col-12 text-center">
 						<div class="block-title">У нас недавно купили</div>
 					</div>
@@ -1070,7 +1118,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -1101,7 +1149,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -1132,7 +1180,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -1163,7 +1211,7 @@
 							<div class="poduct-info">
 								<div class="clearfix prod-info-head">
 									<div class="title">25 Кенийских роз 40см. в крафте</div>
-									<div class="price">2300 Р</div>
+									<div class="price">2300 &#8381;</div>
 								</div>
 
 								<div class="but-group clearfix">
@@ -1195,7 +1243,7 @@
 		<footer class="main-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-sm-6 col-md-3">						
+					<div class="col-6 col-lg-3">						
 						<span class="copyright">LavandaFlor © 2014-2018</span>
 						<div class="adress">
 							<ul>
@@ -1206,7 +1254,7 @@
 						</div>
 					</div>
 
-					<div class="col-6 col-sm-6 col-md-3">
+					<div class="col-6 col-lg-3">
 						<div class="footer-title">Контакты</div>
 						<div class="phone">
 							<ul>
@@ -1390,7 +1438,7 @@
 	</div>
 	
 	<!-- Ссылку на чат добавляем везде кроме одиночной страницы продукта (она там с кнопкой) -->
-	<a href="#" class="open-chat"><img src="img/go-chat.png" alt=""><span class="hover-help left">Есть вопросы?</span></a>
+	<a href="#" class="open-chat"><img src="img/chat.svg" alt=""><span class="hover-help left">Есть вопросы?</span></a>
 
 	<script src="js/scripts.min.js"></script>
 </body>
