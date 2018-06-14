@@ -7587,8 +7587,8 @@ i.icon.account {
 }
 
 i.icon.star.full {
-    width: 20px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
     background-image: url(../img/gold-star.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -7596,8 +7596,8 @@ i.icon.star.full {
 }
 
 i.icon.star {
-    width: 20px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
     background-image: url(../img/star.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -8488,15 +8488,18 @@ ul.star-list li {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid #fff;
-    -webkit-box-shadow: inset 0px 0px 0px 1px #fff;
--moz-box-shadow: inset 0px 0px 0px 1px #fff;
-box-shadow: inset 0px 0px 0px 1px #fff);
 }
 
 .rewiew-item .photo .site img {
     z-index: 3;
-    position: relative
+    position: relative;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #fff;
+-moz-box-shadow: inset 0px 0px 0px 1px #fff;
+box-shadow: inset 0px 0px 0px 1px #fff;
 }
+
+ 
+
 
 .rewiew-item .photo .deliver {
     margin-left: -30px
