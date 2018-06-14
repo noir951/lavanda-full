@@ -1,0 +1,762 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.contact-block-line .phone
+		margin-left: 15px
+	.block-title
+		font-size: 18px
+
+	.rewiew-item
+		padding: 8px 8px 20px 8px
+	.rewiew-item .photo .deliver
+		margin-left: -20px
+	.rewiew-item .photo .deliver, .rewiew-item .photo .site
+		width: 50%
+		font-size: 9px
+	.rewiew-item .photo
+		width: 50%
+	.rewiew-item .text
+		font-size: 47%
+		margin-top: 30px
+		p
+			font-size: 10px
+
+
+// ≥992px
++media-breakpoint-down(md)
+	.guard-lozung
+		display: none
+	.contact-block-line .adress ul li,
+	.contact-block-line .phone ul li
+		font-size: 11px
+
+	.hidden-lg
+		display: none !important
+
+	.contact-block-line 
+		text-align: center
+		.advantages
+			float: none
+			ul li
+				text-align: left
+
+	.main-navigation
+		margin-top: 0
+		border-top: 0
+	.main-nav-list ul
+		display: block
+		max-height: 41px
+		width: 600px
+		overflow: hidden
+		overflow-x: scroll
+		white-space: nowrap
+	.main-nav-list
+		overflow: hidden
+		overflow-x: scroll
+
+	.product-item .poduct-info .prod-info-head .title,
+	.product-item .poduct-info .prod-info-head .price
+		font-size: 12px
+	.product-item .poduct-info .but-group button.add
+		padding: 3px
+	.product-item .poduct-info .but-group .like-wrap
+		margin-top: 0
+
+	.account-menu
+		ul
+			display: flex
+			justify-content: space-between
+			li
+				display: inline-block
+				width: 23%
+				font-size: 0
+				float: left
+				box-sizing: border-box
+				a
+					font-size: 11px
+					text-align: center
+					span
+						display: block
+						margin: 0
+
+	.account
+		padding: 15px 0
+
+	.product-slider
+		display: none
+	
+	.mob-slider-wrap
+		position: relative
+		.plus-proc
+			color: #fff
+			padding: 5px 12px
+			font-size: 13px
+			background: #3c3c3c
+			border-radius: 5px 0 0 5px
+			z-index: 1
+			position: absolute
+			top: 15px
+			right: 0
+			display: inline-block
+
+	.product-page-info 
+		.title
+			font-size: 13px
+			padding: 15px 0
+			.name, .price-mob
+				display: inline-block
+			.name
+				width: 70%
+			.price-mob
+				width: 29%
+				text-align: right
+				.count
+					margin-right: 10px
+	
+	.product-page-info .text .title-text
+		font-size: 14px
+	.product-page-info .text p
+		font-size: 12px
+	.product-advantages
+		text-align: left
+		ul
+			margin: 0
+			padding: 0
+			margin-top: 40px
+			display: block
+	.product-advantages ul li:first-child
+		border-top: 1px solid #e5e5e5
+		padding-top: 15px
+
+	.product-page-info .price
+		display: none
+	section.page .deliver-item
+		.title
+			width: 40%
+		.text
+			width: 60%
+
+// ≥768px
++media-breakpoint-down(sm)
+	section.page .deliver-item
+		.title
+			width: 100%
+		.text
+			width: 100%
+
+	.imgages-content-control
+		display: none
+	.tab_item .line img
+		display: none
+// ≥576px
++media-breakpoint-down(xs)
+	.contact-block-line .advantages ul li i
+		margin-right: 5px
+	.contact-block-line .advantages ul li
+		margin-left: 4px
+	
+	.module-header
+		padding: 15px 0
+	.product-item
+		padding: 0
+	.product-item .poduct-info .prod-info-head .title,
+	.product-item .poduct-info .prod-info-head .price
+		font-size: 10px
+	.module-header .module-filter .title
+		display: none
+
+	.module-header .module-filter .filter-items a
+		margin: 0
+		margin-right: 7px
+	.module-header .module-filter .filter-items
+		padding: 15px 0 5px
+	
+	.module-header .module-filter,
+	.module-header .module-title
+		padding: 0
+
+	.copyright, footer.main-footer .footer-title
+		font-size: 11px
+	.adress ul li, .phone ul li
+		font-size: 9px
+		line-height: 3
+	.mobile_search
+		margin: 10px 0 0
+	
+	.phone ul li.social_mob i
+		transform: scale(.85)
+	.contact-block-line 
+		.advantages
+			display: block
+			ul
+				display: block
+				width: 100%
+				text-align: center
+				li
+					margin: 0
+					&:first-child
+						float: left
+					&:last-child
+						float: right
+
+	.modal
+		width: 100% !important
+		margin: 0
+		position: fixed
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		z-index: 9999
+		max-height: 100%
+		overflow-y: auto 
+	.mfp-close-btn-in .mfp-close
+		background-image: url("../img/close_dark.png")
+		color: transparent
+		background-repeat: no-repeat
+		background-position: center center
+		top: 17px
+		right: 6px
+
+	.account-menu ul li a
+		font-size: 8px
+	
+	.order-history-item
+		padding: 10px
+		padding-top: 40px
+		.photo
+			display: block
+			width: 55%
+		.description
+			width: 64%
+			.id
+				position: absolute
+				top: 40px
+				right: 10px
+				z-index: 1
+		.price
+			width: 34%
+			vertical-align: top
+			margin: 0
+			padding: 0
+			.price-summ span
+				margin-right: 5px
+		.status
+			position: absolute
+			top: 67px
+			right: 10px
+			text-align: right
+			z-index: 1
+
+	.photo-name-mob
+		font-size: 10px
+		position: absolute
+		top: 15px
+		left: 20px
+		z-index: 1
+		.item
+			display: inline-block
+			margin-right: 5px
+	
+	.breadcrumb, .map
+		display: none
+
+	.product-item .blue
+		background: rgba(87,194,245,.7)
+
+	.row-mobile
+		padding: 0 7px
+	.no-padding
+		padding: 0
+
+	.main-nav-list ul
+		margin-left: 5px
+
+	i.icon.photo
+		width: 22px
+		height: 16px
+		background-position: -41px 0
+		background-size: 396px
+
+	i.icon.label
+		width: 12px
+		height: 19px
+		background-position: -60px 0
+		background-size: 368px
+
+	i.icon.list
+		width: 13px
+		height: 19px
+		background-position: -75px 0
+		background-size: 368px
+
+	.last-sale
+		padding: 0 
+
+	.product-count
+		margin-top: 0
+
+	.button-wrap-mob
+		position: fixed
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 5
+		display: block
+		.add-to-cart
+			border-radius: 0
+			padding: 11px
+			z-index: 5
+			opacity: 1
+			background-color: transparent
+			position: relative
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				width: calc(100% - 78px)
+				background: #815ba6
+				z-index: -1
+			&:hover, &:visited
+				background-color: transparent
+
+		a.go-chat
+			display: inline-block
+			-webkit-border-radius: 50%
+			border-radius: 50%
+			position: absolute
+			bottom: 36px
+			right: 15px
+			z-index: 10
+			&:after
+				content: ""
+				display: block
+				width: 95px
+				height: 62px
+				position: absolute
+				background-repeat: no-repeat
+				background-image: url(../img/add-but.png)
+				background-position-x: -270px
+				right: -31px
+				margin: auto
+				bottom: -45px
+
+	.order-variants ul li
+		padding: 7px 4px
+		font-size: 10px
+	.product-page-info .add-to-cart.disabled
+		color: #fff
+		background-color: transparent
+
+	.order-history-item 
+		padding-bottom: 50px
+		.description
+			width: 69%
+		.status
+			width: 45%
+	.order-history-item .description .order-name
+		max-height: 18px
+		overflow: hidden
+		white-space: nowrap
+		position: relative
+
+	.order-history-item .price
+		position: absolute
+		right: 15px
+	.order-history-item .price .price-summ
+		font-size: 11px
+
+	.product-item, .rewiew-item
+		margin-bottom: 15px
+	.rewiew
+		padding: 30px 0
+	.block-title span
+		font-size: 12px
+		margin-top: 5px
+
+	.main-page .last-sale
+		padding: 15px 0
+
+	.order-name
+		display: none
+	.order-name.mob
+		display: block
+
+
+	.auth-sign-in-page
+		.modal-title
+			margin-bottom: 10px
+		.social-auth ul
+			display: block
+			text-align: center
+			margin: 5px 0
+
+	.auth-sign-in-page .sign-in-block
+		padding: 15px
+
+	.auth-sign-in-page .sign-in-block .auth-form .input 
+		input
+			&:focus
+				&::placeholder
+					color: #fff
+
+
+	.add-order .module-title
+		margin-bottom: 15px
+	.input-wraper.textarea>label
+		line-height: 1
+	.input-wraper.textarea textarea
+		padding-top: 45px
+
+
+	.chackbox-inner
+		left: 0
+		top: 50px
+
+	input#order-adress
+		padding-right: 15px
+
+	.input-wraper.input label
+		font-size: 10px
+		white-space: nowrap
+		height: 9px
+
+	.input-line-70
+		margin-bottom: 50px
+
+	.oreder-list-check .photo
+		width: 100%
+		text-align: center
+		img
+			width: 100px
+			display: inline-block
+			margin: 10px 0
+			border: 5px solid #fff
+			border-radius: 50%
+	.oreder-list-check .list
+		width: 100%
+		padding: 20px
+	
+	.product-count .counter
+		margin: 0 7px
+		width: 30px
+	.product-count .counter .counterBut.dec
+		left: -5px
+	.product-count .counter .counterBut.inc
+		right: -5px
+
+	.oreder-list-check .list .product-count>.name
+		width: calc(100% - 128px)
+		white-space: nowrap
+		overflow: hidden
+		font-size: 12px
+	.oreder-list-check .list .product-count .counter-wrap
+		width: 128px
+	.oreder-list-check .list .product-count
+		line-height: 1.4
+
+	.remove
+		width: 12px
+		height: 12px
+	.remove:after, .remove:before 
+		width: 12px
+
+	.product-count .name
+		font-size: 12px
+
+	form.promocode
+		.input-wraper
+			margin: 0
+			width: 100%
+			input
+				width: 100%
+
+	.more-to-order .add-more-wrap, #add-more .close-add
+		display: none !important
+	#add-more
+		display: block !important
+
+	.tab_item .pay-but-wrap a
+		padding: 15px
+		width: 100%
+	.wrapper-tabs .tabs .tab i
+		margin-right: 0
+		transform: scale(0.8)
+	
+	.wrapper-tabs .tabs .tab
+		width: auto
+		font-size: 0
+		padding: 3px 25px
+		text-align: center
+	.wrapper-tabs .tabs .tab p
+		line-height: 1
+		display: block
+		white-space: nowrap
+		font-size: 9px
+	
+	.tab_item .pay-but-wrap
+		padding: 20px 0
+
+	section.order-done .done-link-wrap .link a
+		font-size: 9px
+
+	.edit-form .img
+		width: 70px
+	.edit-form .input-wrap
+		width: calc(100% - 74px)
+		padding: 0px
+		padding-left: 10px
+
+	.edit-form .input-wrap p
+		position: absolute
+	
+	.file-upload
+		font-size: 8px
+	.edit-form
+		margin-bottom: 80px
+		.input-wrap
+			position: relative
+		.save-edit
+			margin-top: 50px
+			position: absolute
+			left: 93px
+			transform: translateX(-50%)
+
+	.block-title
+		margin-bottom: 15px
+
+	.main-header
+		.no-padding
+			padding: 0 15px
+
+	.product-item .sale
+		font-size: 13px
+
+
+	.main-page
+		footer.main-footer
+			margin-top: 15px
+
+
+	.input-wraper
+		&.textarea
+			textarea
+				&:focus ~ label
+					transform: translate(-25px,-12px) scale(.85)
+			&.full-input
+				> label
+					transform: translate(-25px,-7px) scale(.85)
+		&.input
+			> label
+				padding-right: 0
+			input
+				&:focus ~ label
+					transform: translate(-25px,-10px) scale(.85)
+			input#order-adress
+				&:focus ~ label			
+					transform: translate(-15px,-10px) scale(.85)
+			input#order-adress-home
+				&:focus ~ label			
+					transform: translate(-5px,-10px) scale(.85)
+			input#order-deliver-date
+				&:focus ~ label			
+					transform: translate(-10px,-10px) scale(.85)
+			input#order-deliver-time
+				&:focus ~ label			
+					transform: translate(-8px,-10px) scale(.85)
+			input#order-promocode
+				&:focus ~ label			
+					transform: translate(-22px,-10px) scale(.85)
+	
+			&.full-input
+				> label
+					transform: translate(-25px,-10px) scale(.85)
+				input#order-adress ~ label			
+					transform: translate(-15px,-10px) scale(.85)
+				input#order-adress-home ~ label			
+					transform: translate(-5px,-10px) scale(.85)
+				input#order-deliver-date ~ label			
+					transform: translate(-10px,-10px) scale(.85)
+				input#order-deliver-time ~ label			
+					transform: translate(-8px,-10px) scale(.85)
+				input#order-promocode ~ label	
+					transform: translate(-22px,-10px) scale(.85)
+
+	.edit-profile
+		.input-wraper
+			&.input 
+				//label
+				//	transform: translate(-17px,-10px) scale(.85)
+				input 
+					&:focus ~ label
+						transform: translate(-17px,-10px) scale(.85)
+				&.full-input label
+					transform: translate(-17px,-10px) scale(.85)
+
+	.hover-help.top
+		top: -9px
+		right: -197%
+		height: auto
+		white-space: normal
+		&:before
+			content: ''
+			position: absolute
+			left: -25px
+			border: 17px solid transparent
+			border-right: 17px solid #f0f0f0
+			top: 0
+			bottom: 0
+			margin: auto
+			z-index: -1
+	.hover-help.right
+		top: 0
+		left: 107%
+		right: auto
+		bottom: auto
+		white-space: nowrap
+	
+	.add-info .hover-help.right
+		right: auto
+		left: 50%
+		top: -100%
+		&:before
+			display: none
+		&:after
+			content: ''
+			position: absolute
+			border: 9px solid transparent
+			border-top: 7px solid #f0f0f0
+			margin: auto
+			bottom: -15px
+			left: 72px
+
+	.hover-help.red
+		top: 35px
+		left: 0
+		&:before
+			display: none
+		&:after
+			content: ''
+			position: absolute
+			border: 9px solid transparent
+			border-bottom: 7px solid #f0f0f0
+			margin: auto
+			top: -15px
+			left: 15px
+
+	.make-photo
+		.hover-help.right
+			top: 25px
+			left: 96px
+			&:before
+				display: none
+			&:after
+				content: ''
+				position: absolute
+				border: 9px solid transparent
+				border-bottom: 7px solid #f0f0f0
+				margin: auto
+				top: -15px
+				left: 15px	
+
+	.add-more-slider
+		.item
+			padding: 0 5px
+		.owl-nav
+			.owl-prev
+				left: 0
+			.owl-next	
+				right: 0
+
+	footer.main-footer
+		margin-top: 15px 
+	
+	.wrapper-tabs
+		min-height: 290px
+
+	section.product-page
+		padding-top: 5px
+
+	.product-page-info .gabarits .shyrina
+		text-align: left
+
+
+
+	.edit-form
+		.input-wraper.input label
+			font-size: 10px
+		.input-wraper.input input
+			font-size: 12px
+
+	.product-page .main-footer
+		margin-bottom: 70px
+
+	.mob_slider
+		margin-top: 10px
+
+	.main-nav-list
+		&:not(.mob-menu-fixed)
+			margin-left: -5px
+
+	.product-page .main-nav-list
+		margin-left: -9px
+
+	.edit-form
+		margin-top: 0
+	.edit-profile .title
+		margin-bottom: 4px
+
+	.oreder-list-check
+		border-radius: 5px
+
+	.oreder-list-check .list
+		padding: 15px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	.order-name.mob
+		display: none
+	.photo-name-mob
+		display: none
+
+	a.go-chat
+		display: none
+
+	.modal
+		border-radius: 5px
+
+
+// ≤768px
++media-breakpoint-up(md)
+	.mob-menu-fixed, .order-title-list
+		display: none !important
+
+	.oreder-list-fix
+		padding-left: 50px
+
+// ≤992px
++media-breakpoint-up(lg)
+	.mobile-header, .mobile_search
+		display: none !important
+
+	.hidden-xl, .mob_slider, .price-mob, .mob-slider-wrap
+		display: none !important
+	
+	.no-padding
+		padding: 0
+
+	.bb-lg
+		border-bottom: 1px solid #e1e1e1
+		padding-bottom: 40px
+
+// ≤1200px
++media-breakpoint-up(xl)
